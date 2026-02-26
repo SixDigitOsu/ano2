@@ -2,22 +2,21 @@
 
 package lista_matriz;
 import java.util.Scanner;
-public class ex12 {
+public class ex13 {
     final static Scanner LER = new Scanner(System.in);
     public static void main(String[] args) {
 
         int[][] matriz = lerMatriz();
-        double soma = somarAbaixoDiagonalPrincipal(matriz);
-        double media = soma / (((matriz.length * matriz.length) / 2) - (matriz.length / 2));
-        System.out.println(media);
+        int soma = somarAcimaDiagonalPrincipal(matriz);
+        System.out.println(soma);
 
     }
-   // Somar abaixo da diagonal principal 
-   public static double somarAbaixoDiagonalPrincipal(int matriz[][]){
-    double soma = 0;
+   // Somar acima da diagonal principal 
+   public static int somarAcimaDiagonalPrincipal(int matriz[][]){
+    int soma = 0;
     for (int i = 0; i < matriz.length; i++) {
         for (int j = 0; j < matriz.length; j++) {
-            if (i > j) {
+            if (i < j) {
             soma+= matriz[i][j];
             }
         }
