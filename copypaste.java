@@ -7,7 +7,16 @@ public class copypaste {
     public static void main(String[] args) {
 
     }
+    // Prenche vetor aleatório
+    public static int[] vetorAleatorio(int n) {
+        int[] vetor = new int[n];
+        for (int i = 0; i < vetor.length; i++) {
+            vetor[i] = (int) (Math.random() * 10);
+        }
 
+        return vetor;
+
+    }
 
     // Imprimir matriz
    public static void imprimirMatriz (double[][] matriz){
