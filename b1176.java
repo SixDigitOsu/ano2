@@ -20,17 +20,19 @@ public class b1176 {
     }
 
     // Fibonacci
-    public static int gyrozeppeli(long i) {
-        int v1 = 0;
-        int v2 = 1;
-        int v3 = 1;
+    public static long gyrozeppeli(long i) {
+        long v1 = 0;
+        long v2 = 1;
+        long v3 = 0;
         for (int j = 1; j < i; j++) {
             v3 = v1 + v2;
             v1 = v2;
             v2 = v3;
 
         }
-
+        if(i == 1){
+            v3 = 1;
+        }
         return v3;
     }
 

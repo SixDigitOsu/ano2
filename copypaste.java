@@ -38,7 +38,8 @@ public class copypaste {
     }
 
     // Ler vetor
-    public static int[] criarVetor(int tamanho) {
+    public static int[] criarVetor() {
+        int tamanho = lerInt();
         int[] vetor = new int[tamanho];
 
         for (int i = 0; i < tamanho; i++) {
