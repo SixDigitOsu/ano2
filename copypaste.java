@@ -7,6 +7,30 @@ public class copypaste {
     public static void main(String[] args) {
 
     }
+
+   
+
+    // BUBBLE SORT
+    public static void ordenaVetor(int[] alturas) {
+
+        for (int i = 0; i < alturas.length - 1; i++) {
+            for (int j = 0; j < alturas.length - 1 - i; j++) {
+
+                if (alturas[j] > alturas[j + 1]) {
+                    int temp = alturas[j];
+                    alturas[j] = alturas[j + 1];
+                    alturas[j + 1] = temp;
+                }
+            }
+        }
+
+        for (int i = 0; i < alturas.length; i++) {
+            System.out.printf("%d ", alturas[i]);
+        }
+        System.out.println();
+
+    }
+
     // Prenche vetor aleatório
     public static int[] vetorAleatorio(int n) {
         int[] vetor = new int[n];
@@ -36,6 +60,7 @@ public class copypaste {
         }
         System.out.println();
     }
+    
 
     // Ler vetor
     public static int[] criarVetor() {
