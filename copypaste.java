@@ -8,7 +8,17 @@ public class copypaste {
 
     }
 
-   
+   // Ler matriz
+   public static int[][] lerMatriz(){
+    int  tamanho = lerInt();
+    int [][] matriz = new int[tamanho][tamanho];
+    for (int i = 0; i < matriz.length; i++) {
+        for (int j = 0; j < matriz.length; j++) {
+            matriz[i][j] = lerInt();
+        }
+    }
+    return matriz;
+   }
 
     // BUBBLE SORT
     public static void ordenaVetor(int[] alturas) {
